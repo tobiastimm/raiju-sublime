@@ -51,7 +51,51 @@
 				<string>#CEB3F7</string>
 			</dict>
 		</dict>
-		<dict>
+    <dict>
+      <key>name</key>
+      <string>Punctuation</string>
+      <key>scope</key>
+      <string>
+        punctuation.definition, punctuation.definition.annotation, punctuation.definition.heading, punctuation.definition.list_item, punctuation.definition.thematic-break, punctuation.separator, punctuation.terminator, punctuation.accessor, punctuation.section, punctuation.support.type.property-name.begin, punctuation.support.type.property-name.end
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#8892aa</string>
+      </dict> 
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Block and Braces</string>
+      <key>scope</key>
+      <string>
+        meta.brace.round, meta.brace.curly, punctuation.definition, keyword.operator.ternary, meta.brace.curly.graphql, meta.brace.square, punctuation.operation.graphql, punctuation.colon.graphql 
+      </string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#8892aa</string>
+      </dict> 
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>constant.numeric.line-number</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffffff33</string>
+      </dict>
+    </dict>		
+    <dict>
+      <key>scope</key>
+      <string>constant.numeric.line-number.match</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffedcb</string>
+      </dict>
+    </dict>
+    <dict>
 			<key>name</key>
 			<string>Number</string>
 			<key>scope</key>
@@ -62,55 +106,88 @@
 				<string>#CEB3F7</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Built-in constant</string>
+    <dict>
+      <key>scope</key>
+      <string>constant.language</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#CBB1F3</string>
+      </dict>
+    </dict>		
+    <dict>
+      <key>scope</key>
+      <string>variable.member</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#a188f1</string>
+      </dict>
+    </dict>
+    <dict>
 			<key>scope</key>
-			<string>constant.language</string>
+			<string>variable.language</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CBB1F3</string>
+				<string>#a188f1</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>User-defined constant</string>
+    <dict>
+      <key>scope</key>
+      <string>constant.character, constant.other</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#CBB1F3</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>scope</key>
+      <string>variable.function, meta.selectionset.graphql variable.graphql, meta.type.interface.graphql meta.type.object.graphql variable.graphql</string> 
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#d7e2ff</string>
+      </dict>
+    </dict>		
+    <dict>
+      <key>scope</key>
+      <string>variable.annotation</string> 
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffedcb</string>
+      </dict>
+    </dict>    
+    <dict>
+      <key>scope</key>
+      <string>variable.annotation</string> 
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#ffedcb</string>
+      </dict>
+    </dict>    
+    <dict>
+      <key>scope</key>
+      <string>keyword, keyword.operator.word</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#8D9AD1</string>
+      </dict>
+    </dict>
+    <dict>
 			<key>scope</key>
-			<string>constant.character, constant.other</string>
-			<key>settings</key>
+			<string>keyword.operator</string> 
+      <key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CBB1F3</string>
+				<string>#ffedcb</string>
 			</dict>
 		</dict>
 		<dict>
-			<key>name</key>
-			<string>Variable</string>
-			<key>scope</key>
-			<string>variable</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string> italic</string>
-				<key>foreground</key>
-				<string>#A7A7EE</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Keyword</string>
-			<key>scope</key>
-			<string>keyword</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#8D9AD1</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Storage</string>
 			<key>scope</key>
 			<string>storage</string>
 			<key>settings</key>
@@ -122,8 +199,6 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>name</key>
-			<string>Storage type</string>
 			<key>scope</key>
 			<string>storage.type</string>
 			<key>settings</key>
@@ -167,17 +242,6 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#D7E2FF</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Function argument</string>
-			<key>scope</key>
-			<string>variable.parameter</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#D4D4D4</string>
 			</dict>
 		</dict>
 		<dict>
